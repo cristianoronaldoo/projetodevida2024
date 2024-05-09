@@ -14,13 +14,13 @@
         <div class="conteudo">
             <div class="botoes">
                 <button class="botao ativo">focar na academia</button>
-                <button class="botao">continuar trabalhando</button>
-                <button class="botao">estudar muito</button>
-                <button class="botao">guardar dinheiro</button>
+                <button class="botao">economizar</button>
+                <button class="botao">estudar</button>
+                <button class="botao">trabalhar</button>
             </div>
             <div class="abas-textos">
                 <div class="aba-conteudo ativo">
-                    <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos alura</h3>
+                    <h3 class="aba-conteudo-titulo-principal">trabalhar</h3>
                     <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
                     <div class="contador">
                         <div class="contador-digito">
@@ -40,20 +40,9 @@
                             <p class="contador-digito-texto">seg</p>
                         </div>
                     </div>
-                </div>const botoes = document.querySelectorAll(".botao");
-
-                for(let i=0;i <botoes.length;i++){
-                    botoes[i].onclick = function(){
-                        
-                        for(let j=0;j<botoes.length;j++){
-                            botoes[j].classList.remove("ativo");
-                        }
-                        botoes[i].classList.add("ativo");
-                    }
-                }
-                
+                </div>
                 <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">Criar 5 projetos em Javascript</h3>
+                    <h3 class="aba-conteudo-titulo-principal">focar na academia</h3>
                     <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
                     <div class="contador">
                         <div class="contador-digito">
@@ -61,3 +50,68 @@
                             <p class="contador-digito-texto">dias</p>
                         </div>
                         <div class="contador-digito">
+                            <p class="contador-digito-numero" id="horas1"></p>
+                            <p class="contador-digito-texto">horas</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="min1"></p>
+                            <p class="contador-digito-texto">min</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="seg1"></p>
+                            <p class="contador-digito-texto">seg</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aba-conteudo">
+                    <h3 class="aba-conteudo-titulo-principal">economizar</h3>
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                    <div class="contador">
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="dias2"></p>
+                            <p class="contador-digito-texto">dias</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="horas2"></p>
+                            <p class="contador-digito-texto">horas</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="min2"></p>
+                            <p class="contador-digito-texto">min</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="seg2"></p>
+                            <p class="contador-digito-texto">seg</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aba-conteudo">
+                    <h3 class="aba-conteudo-titulo-principal">estudar</h3>
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                    <div class="contador">
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="dias3"></p>
+                            <p class="contador-digito-texto">dias</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="horas3"></p>
+                            <p class="contador-digito-texto">horas</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="min3"></p>
+                            <p class="contador-digito-texto">min</p>
+                          </div>
+                          <div class="contador-digito">
+                              <p class="contador-digito-numero" id="seg3"></p>
+                              <p class="contador-digito-texto">seg</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <script src="main.js"></script>
+  </body>
+  
+  </html>
+
